@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="toolbarNavigationButtonStyle">@style/Toolbar.Button.Navigation.Tinted</item>
+		<item name="android:statusBarColor" tools:targetApi="lollipop">#40000000</item>
+	</style>
+
+	<style name="Toolbar.Button.Navigation.Tinted" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+		<item name="tint">@color/white</item>
+	</style>
+
+</resources>
