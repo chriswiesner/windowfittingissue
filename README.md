@@ -1,8 +1,6 @@
 # windowfittingissue
 
 demo app to demonstrate issue with padding applied to childs of CoordinatorLayout when setting `fitsSystemWindows=true`
-<<<<<<< HEAD
-=======
 
 When using a `FrameLayout` as root and manually setting Window Transformation Flags the Image gets displayed underneath the statusbar as expected.
 
@@ -18,4 +16,3 @@ As shown in the above image, the ImageView itself is placed underneath the Statu
 Please check the two different implementations:
 - `master`: CoordinatorLayout
 - `conventional`: FrameLayout with custom WTFs
->>>>>>> 800c650... Add Readme
