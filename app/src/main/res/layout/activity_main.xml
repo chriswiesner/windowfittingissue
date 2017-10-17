@@ -6,9 +6,9 @@
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		xmlns:tools="http://schemas.android.com/tools"
 		android:layout_width="match_parent"
-		app:statusBarBackground="@color/statusbar_scrim"
 		android:layout_height="match_parent"
 		android:fitsSystemWindows="true"
+		app:statusBarBackground="@android:color/transparent"
 		tools:context="com.example.windowfittingissue.MainActivity">
 
 		<android.support.v7.widget.Toolbar
@@ -20,12 +20,20 @@
 			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
 			tools:ignore="UnusedAttribute"/>
 
-		<ImageView
-			android:fitsSystemWindows="true"
+		<android.support.design.widget.AppBarLayout
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:adjustViewBounds="true"
-			android:src="@drawable/header"/>
+			android:fitsSystemWindows="true"
+			app:statusBarBackground="@color/statusbar_scrim">
+
+			<ImageView
+				android:id="@+id/image"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				android:fitsSystemWindows="true"
+				android:src="@drawable/header"/>
+		</android.support.design.widget.AppBarLayout>
 
 	</android.support.design.widget.CoordinatorLayout>
 </layout>
