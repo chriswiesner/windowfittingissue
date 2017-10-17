@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
-	<FrameLayout
+	<android.support.design.widget.CoordinatorLayout
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		xmlns:tools="http://schemas.android.com/tools"
 		android:layout_width="match_parent"
+		app:statusBarBackground="@color/statusbar_scrim"
 		android:layout_height="match_parent"
+		android:fitsSystemWindows="true"
 		tools:context="com.example.windowfittingissue.MainActivity">
 
 		<android.support.v7.widget.Toolbar
 			android:id="@+id/toolbar"
-			android:fitsSystemWindows="true"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:elevation="@dimen/elevation_toolbar"
@@ -20,10 +21,11 @@
 			tools:ignore="UnusedAttribute"/>
 
 		<ImageView
+			android:fitsSystemWindows="true"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:adjustViewBounds="true"
 			android:src="@drawable/header"/>
 
-	</FrameLayout>
+	</android.support.design.widget.CoordinatorLayout>
 </layout>
